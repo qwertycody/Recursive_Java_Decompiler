@@ -1,0 +1,1 @@
+sh recursiveDecompile.sh "/c/pathToFolder/myWar.war"
