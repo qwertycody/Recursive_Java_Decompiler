@@ -14,7 +14,7 @@ doMagic()
     do
         if [[ $1 =~ \.$fileType ]]; then
             echo JAVA_CLASS "$1"
-            java -jar ./jd-cmd-master/jd-cli/target/jd-cli.jar -od "$ARCHIVE_OUTPUT_DIRECTORY" "$1"
+            java -jar ./jd-cmd-master/jd-cli/target/jd-cli.jar -dm -rn -n -od "$ARCHIVE_OUTPUT_DIRECTORY" "$1"
             echo "Decompiled $1 to $ARCHIVE_OUTPUT_DIRECTORY"
             return
         fi
@@ -25,7 +25,7 @@ doMagic()
     do
         if [[ $1 =~ \.$fileType ]]; then
             echo JAVA_ARCHIVE "$1"
-            java -jar ./jd-cmd-master/jd-cli/target/jd-cli.jar -od "$ARCHIVE_OUTPUT_DIRECTORY" "$1"
+            java -jar ./jd-cmd-master/jd-cli/target/jd-cli.jar -dm -rn -n -od "$ARCHIVE_OUTPUT_DIRECTORY" "$1"
             echo "Decompiled $1 to $ARCHIVE_OUTPUT_DIRECTORY"
             
             searchDirectory "$ARCHIVE_OUTPUT_DIRECTORY"
