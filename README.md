@@ -1,4 +1,4 @@
-# Recursive_Java_Decompiler
+# Recursive Java Decompiler
 Recursive Bash Program to Decompile a JAR/WAR and all of its nested libraries
 
 Usage:
